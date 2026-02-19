@@ -21,8 +21,7 @@ const LOAN_PRODUCTS: ServiceLoan[] = [
       "Secure immediate liquidity for your enterprise with flexible funding terms ranging from 9 to 18 months. Designed for UK businesses requiring rapid momentum and transparent repayment structures.",
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=85&auto=format&fit=crop",
-    imageAlt:
-      "Professional reviewing financial charts in a modern office",
+    imageAlt: "Professional reviewing financial charts in a modern office",
     imageLeft: true,
     bg: "bg-[#f0f4f8]",
   },
@@ -33,8 +32,7 @@ const LOAN_PRODUCTS: ServiceLoan[] = [
       "Fast-acting liquidity to secure opportunities. We bridge the gap between financial milestones with transparent terms and no hidden fees, designed specifically for the pace and suitability of the UK market.",
     image:
       "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?w=1200&q=85&auto=format&fit=crop",
-    imageAlt:
-      "Aerial view of Tower Bridge representing financial transition",
+    imageAlt: "Aerial view of Tower Bridge representing financial transition",
     imageLeft: false,
     bg: "bg-white",
   },
@@ -45,8 +43,7 @@ const LOAN_PRODUCTS: ServiceLoan[] = [
       "Strategic funding designed for UK enterprises looking to expand through acquisition. We provide suitability-matched loan structures with an emphasis on speed and transparency, ensuring your business can act decisively on growth opportunities without hidden complexities.",
     image:
       "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=85&auto=format&fit=crop",
-    imageAlt:
-      "Business professionals completing an acquisition deal",
+    imageAlt: "Business professionals completing an acquisition deal",
     imageLeft: true,
     bg: "bg-[#f0f4f8]",
   },
@@ -75,17 +72,39 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {LOAN_PRODUCTS.map((p) => (
-              <div
+              <a
                 key={p.id}
-                className="border border-gray-100 rounded-2xl p-8"
+                href={`#${p.id}`}
+                className="group relative border border-gray-100 rounded-2xl p-8 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-[0_20px_60px_-10px_rgba(10,31,68,0.13)] hover:border-transparent block"
               >
-                <h3 className="text-2xl font-black text-[#0a1f44] mb-4 leading-tight">
+                {/* Left accent bar */}
+                <div className="absolute left-0 top-8 bottom-8 w-[3px] bg-[#0a1f44] rounded-r-full scale-y-0 group-hover:scale-y-100 transition-transform duration-500 ease-out origin-top" />
+
+                <h3 className="text-2xl font-black text-[#0a1f44] mb-4 leading-tight transition-transform duration-500 group-hover:translate-x-2">
                   {p.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-600 leading-relaxed transition-transform duration-500 group-hover:translate-x-2">
                   {p.description}
                 </p>
-              </div>
+
+                {/* Slide-in arrow */}
+                <div className="mt-5 flex items-center gap-1.5 text-xs font-semibold text-[#0a1f44] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-500 delay-75">
+                  View details
+                  <svg
+                    className="w-3.5 h-3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2.5}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              </a>
             ))}
           </div>
         </div>
@@ -95,12 +114,13 @@ export default function ServicesPage() {
       <section className="w-full py-4 bg-[#f0f4f8]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 space-y-4 py-8">
           {LOAN_PRODUCTS.map((p) => (
-            <LoanCard
-              key={p.id}
-              product={p}
-              imageLeft={p.imageLeft}
-              showContactButton={p.showContactButton}
-            />
+            <div key={p.id} id={p.id} className="scroll-mt-20">
+              <LoanCard
+                product={p}
+                imageLeft={p.imageLeft}
+                showContactButton={p.showContactButton}
+              />
+            </div>
           ))}
         </div>
       </section>
