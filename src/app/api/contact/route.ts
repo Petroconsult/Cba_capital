@@ -27,14 +27,3 @@ export async function POST(request: Request) {
     );
   }
 }
-```
-
----
-
-### `.env.local.example`
-```
-SMTP_HOST=smtp.example.com
-SMTP_PORT=587
-SMTP_USER=your-email@example.com
-SMTP_PASS=your-smtp-password
-SMTP_FROM=noreply@cbacapital.com
