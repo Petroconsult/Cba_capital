@@ -1,23 +1,38 @@
 export interface NavLink {
-  href: string;
   label: string;
+  href: string;
 }
 
 export interface LoanProduct {
   id: string;
-  name: string;
+  title: string;
   description: string;
-  rate: number;
+  image: string;
+  imageAlt: string;
 }
 
 export interface ServiceCard {
+  id: string;
   title: string;
   description: string;
-  icon?: React.ReactNode;
+  image: string;
+  imageAlt: string;
+}
+
+// used by various components that display contact information
+export interface ContactInfo {
+  email: string;
+  contactEmail: string;
+  phone: string;
+  address: string;
 }
 
 export interface ContactFormData {
   name: string;
   email: string;
+  phone?: string;
+  company?: string;
+  loanType?: string;
+  amount?: string;
   message: string;
 }

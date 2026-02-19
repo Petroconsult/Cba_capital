@@ -1,10 +1,29 @@
-import React from 'react';
+import Image from "next/image";
+import Badge from "@/components/ui/Badge";
 
 export default function Hero() {
   return (
-    <section className="py-20 text-center">
-      <h2 className="text-4xl font-bold">Welcome to CBA Capital</h2>
-      <p className="mt-4">We provide flexible loan solutions for your business.</p>
+    <section className="w-full bg-white pt-10 pb-0 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="mb-6">
+          <Badge>Hero</Badge>
+        </div>
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#0a1f44] leading-[1.05] tracking-tight max-w-4xl mb-12">
+          Securing corporate momentum with short-term capital solutions
+        </h1>
+      </div>
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="relative w-full rounded-2xl overflow-hidden bg-gray-100" style={{ aspectRatio: "16/7" }}>
+          <Image
+            src="/images/hero-building.jpg"
+            alt="Modern corporate building"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+        </div>
+      </div>
     </section>
   );
 }

@@ -1,10 +1,17 @@
-import React from 'react';
+import Hero from "@/components/sections/home/Hero";
+import ServicesOverview from "@/components/sections/home/ServicesOverview";
+import SecuritySection from "@/components/sections/home/SecuritySection";
+import ContactInfo from "@/components/sections/home/ContactInfo";
+import CTABanner from "@/components/sections/home/CTABanner";
 
 export default function HomePage() {
   return (
-    <section>
-      <h1>Welcome to CBA Capital</h1>
-      <p>Placeholder home page content.</p>
-    </section>
+    <>
+      <Hero />
+      <ServicesOverview />
+      <SecuritySection />
+      <CTABanner />
+      <ContactInfo />
+    </>
   );
 }
