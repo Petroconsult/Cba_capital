@@ -12,8 +12,8 @@ export default function SecuritySection() {
         <div className="flex flex-col md:flex-row items-center bg-[#f0f4f8] rounded-2xl overflow-hidden">
           <div className="relative w-full md:w-1/2 min-h-[320px]">
             <Image
-              src="/images/vault-door.jpg"
-              alt="Secure vault door"
+              src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800"
+              alt="Digital security and financial protection"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"

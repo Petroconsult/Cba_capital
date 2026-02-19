@@ -25,6 +25,7 @@ export interface ContactInfo {
   contactEmail: string;
   phone: string;
   address: string;
+  website?: string;
 }
 
 export interface ContactFormData {

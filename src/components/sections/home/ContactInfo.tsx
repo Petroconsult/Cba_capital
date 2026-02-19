@@ -47,14 +47,14 @@ export default function ContactInfo() {
               style={{ height: "380px" }}
             >
               <Image
-                src="/images/glass-railing.jpg"
-                alt="Modern building with glass railing"
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop"
+                alt="Professional business team in modern office"
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
 
-              <p className="absolute bottom-4 left-4 text-xs text-white font-semibold tracking-widest uppercase">
+              <p className="absolute bottom-4 left-4 text-xs text-white font-semibold tracking-widest uppercase drop-shadow">
                 Empowering Businesses
               </p>
             </div>

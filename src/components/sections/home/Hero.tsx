@@ -15,8 +15,8 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="relative w-full rounded-2xl overflow-hidden bg-gray-100" style={{ aspectRatio: "16/7" }}>
           <Image
-            src="/images/hero-building.jpg"
-            alt="Modern corporate building"
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600"
+            alt="Modern glass skyscraper facade"
             fill
             className="object-cover"
             priority

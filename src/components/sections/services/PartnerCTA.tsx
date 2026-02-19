@@ -27,7 +27,7 @@ export default function PartnerCTA() {
             business. We prioritize personal service over automated applications.
           </p>
           <Button
-            href="mailto:partnerships@cbacapital.com"
+            href="mailto:info@cbacapital.com"
             variant="outline-white"
             size="lg"
           >

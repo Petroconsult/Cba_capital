@@ -10,18 +10,17 @@ export default function ServiceHero() {
         <p className="text-gray-500 text-center text-base mb-10">
           Transparent, fast, and bespoke capital for UK businesses.
         </p>
-        <div
-          className="relative w-full rounded-2xl overflow-hidden"
-          style={{ height: "340px" }}
-        >
+        <div className="relative w-full rounded-2xl overflow-hidden h-[380px]">
           <Image
-            src="/images/london-building-exterior.jpg"
-            alt="London office building exterior"
+            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=85&auto=format&fit=crop"
+            alt="Dark executive boardroom representing professional corporate funding"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
             sizes="100vw"
           />
+          {/* Dark gradient overlay for better text contrast */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a1f44]/70 to-transparent rounded-2xl" />
         </div>
       </div>
     </section>

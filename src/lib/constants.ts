@@ -11,23 +11,23 @@ export const loanProducts: LoanProduct[] = [
     id: '1',
     title: 'Short-term Loan',
     description: 'Quick funding for immediate needs',
-    image: '/images/office-meeting-room.jpg',
-    imageAlt: 'Office meeting room',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=85&auto=format&fit=crop',
+    imageAlt: 'Professional business meeting in modern office',
   },
   {
     id: '2',
     title: 'Business Line of Credit',
     description: 'Flexible borrowing up to your limit',
-    image: '/images/bridge-architecture.jpg',
-    imageAlt: 'Bridge architecture',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=85&auto=format&fit=crop',
+    imageAlt: 'Modern glass skyscraper architecture',
   },
 ];
 
-// Contact data used throughout the site. Some components expect additional
-// fields (contactEmail, address) so they are included for consistency.
+// Contact data used throughout the site.
 export const CONTACT_INFO: ContactInfo = {
-  email: 'info@cbacapital.com',
-  contactEmail: 'info@cbacapital.com',
-  phone: '(123) 456-7890',
-  address: '123 Example Street, London, UK',
+  email: 'info@cbacapitalgroup.com',
+  contactEmail: 'info@cbacapitalgroup.com',
+  phone: '08131055455, 07043682018',
+  address: 'Suite 1, Opeyemi Plaza, Egbeda-Ipaja Road, Alimosho, Lagos',
+  website: 'www.cbacapitalgroup.com',
 };
