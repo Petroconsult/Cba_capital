@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* example CSS variables */
+  --color-primary: #1d4ed8;
+  --color-secondary: #9333ea;
+}
