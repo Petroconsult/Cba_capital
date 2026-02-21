@@ -41,7 +41,7 @@ export default function LoanCard({
           {showContactButton && (
             <div className="mt-6">
               <a
-                href="#contact"
+                href="/contact"
                 className="inline-block bg-[#f26522] text-white font-semibold px-7 py-3 rounded-full hover:bg-[#d4551a] transition-colors text-sm"
               >
                 Contact Us
