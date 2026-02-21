@@ -61,12 +61,10 @@ export default function ContactInfo() {
                 href={`mailto:${CONTACT_INFO.email}`}
                 className="relative inline-flex items-center gap-2 text-sm text-gray-600 transition-colors duration-300 hover:text-[#f26522]"
               >
-                {/* Underline sweep */}
                 <span className="relative">
                   {CONTACT_INFO.email}
                   <span className="absolute bottom-0 left-0 h-[1.5px] w-0 bg-[#f26522] transition-all duration-300 group-hover:w-full rounded-full" />
                 </span>
-                {/* Arrow slides in */}
                 <svg
                   className="w-3.5 h-3.5 opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 text-[#f26522]"
                   fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -106,8 +104,8 @@ export default function ContactInfo() {
               style={{ height: "380px" }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop"
-                alt="Professional business team in modern office"
+                src="https://images.unsplash.com/photo-1764722053231-9162ed8831d2?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Business professional smiling at desk"
                 fill
                 className="object-cover object-center transition-transform duration-700 ease-out"
                 style={{ transform: "scale(1.06) translate(0px, 0px)" }}
