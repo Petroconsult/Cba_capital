@@ -46,7 +46,7 @@ export default function ServiceHero() {
 
         {/* Subtext — fades up after */}
         <p className="text-gray-500 text-center text-base mb-10 opacity-0 translate-y-3 animate-[fadeUp_0.55s_ease-out_0.25s_forwards]">
-          Transparent, fast, and bespoke capital for UK businesses.
+          Transparent, fast, and bespoke capital for businesses.
         </p>
 
         {/* Image — fades up last, parallax on hover */}

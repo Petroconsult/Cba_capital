@@ -133,7 +133,7 @@ export default function ContactInfo() {
               </p>
 
               <Link
-                href="/services"
+                href="/contact"
                 className="group/btn relative text-sm font-semibold text-white bg-[#f26522] px-5 py-2.5 rounded-full inline-flex items-center gap-2 overflow-hidden transition-all duration-300 hover:bg-[#d4551a] hover:gap-3"
               >
                 View Lending Services

@@ -36,4 +36,5 @@ export interface ContactFormData {
   loanType?: string;
   amount?: string;
   message: string;
+  subject?: string;
 }

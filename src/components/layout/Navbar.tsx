@@ -2,10 +2,19 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 import Button from "@/components/ui/Button";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navLinkClass = (path: string) =>
+    `block text-sm font-medium transition-colors ${
+      pathname === path
+        ? "text-[#0a1f44] underline underline-offset-4"
+        : "text-[#0a1f44] hover:text-[#f26522]"
+    }`;
 
   return (
     <nav className="w-full bg-white border-b border-gray-100 sticky top-0 z-50">
@@ -26,35 +35,53 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Nav Links */}
+          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <Link
-              href="/"
-              className={`text-sm font-medium transition-colors ${
-                pathname === "/"
-                  ? "text-[#0a1f44] underline underline-offset-4"
-                  : "text-[#0a1f44] hover:text-[#f26522]"
-              }`}
-            >
+            <Link href="/" className={navLinkClass("/")}>
               Home
             </Link>
-            <Link
-              href="/services"
-              className={`text-sm font-medium transition-colors ${
-                pathname === "/services"
-                  ? "text-[#0a1f44] underline underline-offset-4"
-                  : "text-[#0a1f44] hover:text-[#f26522]"
-              }`}
-            >
+            <Link href="/services" className={navLinkClass("/services")}>
               Services
+            </Link>
+            <Link href="/contact" className={navLinkClass("/contact")}>
+              Contact
             </Link>
           </div>
 
-          {/* CTA */}
-          <Button href="/services" variant="primary" size="md">
-            Get Funding
-          </Button>
+          {/* Desktop CTA */}
+          <div className="hidden md:block">
+            <Button href="/contact" variant="primary" size="md">
+              Get Funding
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-[#0a1f44]"
+          >
+            ☰
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden py-4 space-y-4">
+            <Link href="/" className={navLinkClass("/")}>
+              Home
+            </Link>
+            <Link href="/services" className={navLinkClass("/services")}>
+              Services
+            </Link>
+            <Link href="/contact" className={navLinkClass("/contact")}>
+              Contact
+            </Link>
+
+            <Button href="/contact" variant="primary" size="md">
+              Get Funding
+            </Button>
+          </div>
+        )}
       </div>
     </nav>
   );

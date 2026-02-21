@@ -18,7 +18,7 @@ const LOAN_PRODUCTS: ServiceLoan[] = [
     id: "short-term-loans",
     title: "Short Term Business Loans",
     description:
-      "Secure immediate liquidity for your enterprise with flexible funding terms ranging from 9 to 18 months. Designed for UK businesses requiring rapid momentum and transparent repayment structures.",
+      "Secure immediate liquidity for your enterprise with flexible funding terms ranging from 9 to 18 months. Designed for businesses requiring rapid momentum and transparent repayment structures.",
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=85&auto=format&fit=crop",
     imageAlt: "Professional reviewing financial charts in a modern office",
@@ -29,7 +29,7 @@ const LOAN_PRODUCTS: ServiceLoan[] = [
     id: "bridging-loans",
     title: "Bridging Loans",
     description:
-      "Fast-acting liquidity to secure opportunities. We bridge the gap between financial milestones with transparent terms and no hidden fees, designed specifically for the pace and suitability of the UK market.",
+      "Fast-acting liquidity to secure opportunities. We bridge the gap between financial milestones with transparent terms and no hidden fees, ensuring you move forward with confidence and clarity.",
     image:
       "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?w=1200&q=85&auto=format&fit=crop",
     imageAlt: "Aerial view of Tower Bridge representing financial transition",
@@ -40,24 +40,12 @@ const LOAN_PRODUCTS: ServiceLoan[] = [
     id: "acquisition-loans",
     title: "Business Acquisition Loans",
     description:
-      "Strategic funding designed for UK enterprises looking to expand through acquisition. We provide suitability-matched loan structures with an emphasis on speed and transparency, ensuring your business can act decisively on growth opportunities without hidden complexities.",
+      "Strategic funding designed for enterprises looking to expand through acquisition. We provide suitability-matched loan structures with an emphasis on speed and transparency, ensuring your business can act decisively on growth opportunities without hidden complexities. This includes assistance to secure or expand your business into new premises, supporting every stage of your commercial property journey.",
     image:
       "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=85&auto=format&fit=crop",
     imageAlt: "Business professionals completing an acquisition deal",
     imageLeft: true,
     bg: "bg-[#f0f4f8]",
-  },
-  {
-    id: "real-estate-loans",
-    title: "Real Estate & Mortgage Loans",
-    description:
-      "We offer expert commercial property lending solutions designed for UK portfolio expansion. From high-value acquisitions to strategic development projects, CBA Capital provides transparent, high-speed mortgages tailored to the unique dynamics of the British property market. Our process emphasizes clarity and speed, ensuring you can secure opportunities with confidence.",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=85&auto=format&fit=crop",
-    imageAlt:
-      "Luxury UK commercial property representing real estate investment",
-    imageLeft: false,
-    bg: "bg-white",
     showContactButton: true,
   },
 ];
